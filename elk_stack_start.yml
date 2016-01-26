@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  remote_user: user
+  remote_user: root
   become: yes
   tasks:
   - name: elk_stack_start
