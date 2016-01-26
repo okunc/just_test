@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  remote_user: user
+  become: yes
   tasks:
   - name: elk_stack_start
     command: docker-compose -f /opt/elk/docker-compose-quickstart.yml up -d
